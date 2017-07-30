@@ -6,3 +6,4 @@ Basic features of game implemented by following Derek Banas' Youtube tutorials: 
 #### Extra Features Added: ####
 * Game Over screen when the score reaches 5
 * Ability to restart the game
+* Paddles change color if hit
