@@ -74,6 +74,13 @@ public class Ball : MonoBehaviour {
 	}
 
 	void HandlePaddleHit(Collision2D col) {
+		col.gameObject.GetComponent<Renderer> ().material.color = new Color(
+			Random.Range(0.0f, 1.0f),
+			Random.Range(0.0f, 1.0f), 
+			Random.Range(0.0f, 1.0f), 
+			Random.Range(0.2f, 1.0f)
+		);
+
 		float y = BallHitPaddleWhere (transform.position,
 			          col.transform.position,
 			          col.collider.bounds.size.y);
